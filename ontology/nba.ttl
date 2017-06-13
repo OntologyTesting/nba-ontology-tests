@@ -157,8 +157,7 @@
                                                                          
                                                                          owl:versionInfo "0.2" ;
                                                                          
-                                                                         rdfs:comment """
-      An OWL Ontology of Time (OWL-Time).
+                                                                         rdfs:comment """ An OWL Ontology of Time (OWL-Time).
     """ ;
                                                                          
                                                                          terms:title "The schema.org terms in RDFS+OWL"@en ;
