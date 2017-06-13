@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "http://vicinity.iot.linkeddata.es/vicinity/tests/testsuite-wot.ttlclass-test1" [ label = "rdf:first" ];
+	"http://vicinity.iot.linkeddata.es/vicinity/tests/testsuite-wot.ttlTCC1" -> "7e914ba4f99e6fe0005e4f4824617eac" [ label = "mf:action" ];
+	"http://vicinity.iot.linkeddata.es/vicinity/tests/testsuite-wot.ttl" -> "292adc26:15ca0e2fc31:-7ffc" [ label = "mf:entries" ];
+
+}
