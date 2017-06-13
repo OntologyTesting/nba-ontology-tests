@@ -184,11 +184,7 @@
                                                                          
                                                                          rdfs:seeAlso <http://www.w3.org/TR/owl-time> ;
                                                                          
-                                                                         terms:contributor [ ] ,
-[ ] ,
-[ ] ,
-[ ] ,
-[ ] ;
+                                                                         terms:contributor [ ] ;
 
 terms:hasFormat [ ] .
 
