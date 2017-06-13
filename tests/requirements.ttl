@@ -1,0 +1,38 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> 
+@prefix qt:    <http://www.w3.org/2001/sw/DataAccess/tests/test-query#> 
+@prefix mf:    <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> 
+@prefix dc:    <http://purl.org/dc/terms/>
+@prefix  :     <http://vicinity.iot.linkeddata.es/vicinity/tests/testsuite-wot.ttl> 
+
+: rdf:type mf:Manifest;
+	mf:name "Test suite  for  WoT Ontology v0.0.6.1"; 
+	mf:entries (
+		:class-test1		
+	) .
+#
+#
+# #################################################################
+# #
+# #    Tests about classes
+# #
+# #################################################################
+#
+#
+
+:TCC1 a mf:QueryEvaluationTest;
+	dc:identifier "WoT1";
+	mf:name "Test case 1- Class";
+	dc:description "Related to requirement WoT1 in https://docs.google.com/spreadsheets/d/1eNVcbxxHfV4PntP8f1cRW1uD8IhRTy6nlIkQM85r_Cc/edit#gid=25348692";
+	mf:action[ qt:query """
+				PREFIX owl: <http://www.w3.org/2002/07/owl#>
+				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+				ASK {
+
+ 					Class([Portal])
+
+				} 
+				"""
+			];
+
+	mf:result "true".
