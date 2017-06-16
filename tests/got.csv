@@ -4,3 +4,4 @@ home_participant,,http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAM
 Match,,http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Match
 Team,,http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Team
 Movement,,http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Movement
+NamedIndividual,,http://www.w3.org/2002/07/owl#NamedIndividual
