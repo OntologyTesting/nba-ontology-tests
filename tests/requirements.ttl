@@ -20,19 +20,56 @@
 #
 #
 
-:TCC1 a mf:QueryEvaluationTest;
-	dc:identifier "WoT1";
-	mf:name "Test case 1- Class";
-	dc:description "Related to requirement WoT1 in https://docs.google.com/spreadsheets/d/1eNVcbxxHfV4PntP8f1cRW1uD8IhRTy6nlIkQM85r_Cc/edit#gid=25348692";
-	mf:action[ qt:query """
+:TCP7 a mf:QueryEvaluationTest;
+	dc:identifier "WoT32";
+	mf:name "Test case 7-Object Properties";
+	dc:description "Related to requirement WoT32 in https://docs.google.com/spreadsheets/d/1eNVcbxxHfV4PntP8f1cRW1uD8IhRTy6nlIkQM85r_Cc/edit#gid=25348697";
+	mf:action[qt:query """
 				PREFIX owl: <http://www.w3.org/2002/07/owl#>
 				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 				ASK {
-
- 					Class([Portal1])
-
+ 					ObjectProperty([home_participant]),
+ 					Class([Match]),
+ 					Class([Team])
 				} 
+				""";
+
+			qt:data """
+			
+				[:domain1] a [Team] .
+				[:domain1] a [NamedIndividual] .
+ 				[:range1]   a [Match] .
+		   		[:range1]   a [NamedIndividual] .
+				[:domain1] [home_participant] [:range1].
+  
 				"""
 			];
 
-	mf:result "true".
+	mf:result "true".	
+
+:TCP8 a mf:QueryEvaluationTest;
+	dc:identifier "WoT32";
+	mf:name "Test case 7-Object Properties";
+	dc:description "Related to requirement WoT32 in https://docs.google.com/spreadsheets/d/1eNVcbxxHfV4PntP8f1cRW1uD8IhRTy6nlIkQM85r_Cc/edit#gid=25348697";
+	mf:action[qt:query """
+				PREFIX owl: <http://www.w3.org/2002/07/owl#>
+				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+				ASK {
+ 					ObjectProperty([home_participant]),
+ 					Class([Match]),
+ 					Class([Team])
+				} 
+				""";
+
+			qt:data """
+			
+				[:domain1] a [Team] .
+				[:domain1] a [NamedIndividual] .
+ 				[:range1]   a [Movement] .
+		   		[:range1]   a [NamedIndividual] .
+				[:domain1] [home_participant] [:range1].
+  
+				"""
+			];
+
+	mf:result "true".	
