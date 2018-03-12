@@ -3,14 +3,13 @@
 @prefix dc:    <http://purl.org/dc/terms/> .
 @prefix verif: <http://example/tests/verif-test-description#> .
 @prefix td:    <http://www.w3.org/2006/03/test-description#> .
-@prefix  :     <> 
+@prefix  :     <> .
+
 
 
 :Test-case1 a verif:VerificationTestCase;
 	dc:identifier "platform1";
 	td:specificationReference "http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform1";
 	dc:description "What is an organization?";
-	td:purpose "<Conference> subclassof <http://schema.org/StadiumOrArena>" .
-
-
+	td:purpose "<Conference> subclassof <http://schema.org/Place>" .
 

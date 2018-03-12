@@ -181,11 +181,7 @@
                                                                          
                                                                          terms:license <http://www.opendatacommons.org/licenses/pddl/1.0/> ;
                                                                          
-                                                                         rdfs:seeAlso <http://www.w3.org/TR/owl-time> ;
-                                                                         
-                                                                         terms:contributor [ ] ;
-
-terms:hasFormat [ ] .
+                                                                         rdfs:seeAlso <http://www.w3.org/TR/owl-time> .
 
 
 #################################################################
