@@ -6,8 +6,10 @@
 @prefix  :     <> .
 
 
+
 :Test-case1 a verif:VerificationTestCase;
 	dc:identifier "platform1";
 	td:specificationReference "http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform1";
 	dc:description "What is an organization?";
-	td:purpose "<RelativeEndpoint> subclassof <Link>" .
+	td:purpose "<Conference> subclassof <http://schema.org/Place>" .
+
