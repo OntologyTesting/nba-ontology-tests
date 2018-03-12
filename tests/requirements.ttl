@@ -7,13 +7,13 @@
 
 
 
-:Test-case1 a verif:VerificationTestCase;
+:Test-case1 rdf:type verif:VerificationTestCase;
 	dc:identifier "platform1";
 	td:specificationReference "http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform1";
 	dc:description "What is an organization?";
 	td:purpose "<Conference> subclassof <http://schema.org/Place>" .
 
-:Test-case2 a verif:VerificationTestCase;
+:Test-case2 rdf:type verif:VerificationTestCase;
 	dc:identifier "platform2";
 	td:specificationReference "http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform1";
 	dc:description "What is an organization?";
