@@ -1,10 +1,11 @@
 @prefix dc:    <http://purl.org/dc/terms/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
 @prefix verif: <http://w3id.org/def/verification-tests#> .
 @prefix  :     <> .
 
 
 
-:test-case-1 a verif:TestCaseDesign;
+:test-case-1 a verif:TestCaseDesign, owl:NamedIndividual;
 	verif:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-wot.html#wot1>;
 	dc:description "What is a thing in the web thing context?";
 	verif:desiredBehaviour "<Thing> SubClassOf <http://www.w3.org/2002/07/owl#Thing>".
