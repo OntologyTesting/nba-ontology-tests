@@ -11,5 +11,5 @@
 :Test-case1 a verif:TestCaseDesign, owl:NamedIndividual;
 	verif:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform1>;
 	dc:description "What is an organization?" ;
-	verif:desiredBehaviour "<Player> subClassOf <http://xmlns.com/foaf/0.1/Person>" .
+	verif:desiredBehaviour "<http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Player> subClassOf <http://xmlns.com/foaf/0.1/Person>" .
 
