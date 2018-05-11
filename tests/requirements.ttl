@@ -8,8 +8,8 @@
 
 
 
-:Test-case10 a verif:TestCase, owl:NamedIndividual;
-	td:specificationReference <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings11>;
-	dc:description "An object property mapping can have many target classes to be the type of the generated instances";
-	verif:desiredBehaviour "<ObjectPropertyMapping> <targetClass> <http://www.w3.org/2002/07/owl#Class>" .
-
+:Test-case1 a verif:TestCaseDesign, owl:NamedIndividual;
+	verif:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform1>;
+	dc:description "What is an organization?" ;
+	verif:desiredBehaviour "<Organization> <hasMember> <Agent>";
+	verif:desiredBehaviour "<Organization> <hasPartnershipWith> <Agent>" .
