@@ -247,7 +247,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#away_participant
 
-:away_participant rdf:type owl:ObjectProperty ;
+:away_participant2 rdf:type owl:ObjectProperty ;
                   
                   rdfs:range :Match ;
                   
