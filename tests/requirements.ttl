@@ -1,15 +1,10 @@
-@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc:    <http://purl.org/dc/terms/> .
-@prefix verif: <http://example/tests/verif-test-description#> .
-@prefix td:    <http://www.w3.org/2006/03/test-description#> .
+@prefix verif: <http://w3id.org/def/verification-tests#> .
 @prefix  :     <> .
 
 
 
-:Test-case1 a verif:VerificationTestCase;
-	dc:identifier "platform1";
-	td:specificationReference "http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform1";
-	dc:description "What is an organization?";
-	td:purpose "<Conference> subclassof <http://schema.org/Place>" .
-
+:test-case-1 a verif:TestCaseDesign;
+	verif:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-wot.html#wot1>;
+	dc:description "What is a thing in the web thing context?";
+	verif:desiredBehaviour "<Thing> SubClassOf <http://www.w3.org/2002/07/owl#Thing>".
