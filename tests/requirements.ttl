@@ -13,3 +13,4 @@
 	dc:description "What is an organization?" ;
 	verif:desiredBehaviour "<http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Quarter> subClassOf <http://schema.org/SportsEvent>" .
 
+
