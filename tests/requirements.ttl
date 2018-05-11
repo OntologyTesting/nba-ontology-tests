@@ -2,12 +2,13 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc:    <http://purl.org/dc/terms/> .
 @prefix verif: <http://w3id.org/def/verification-tests#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix  :     <> .
 
 
 
 
-:Test-case10 a verif:TestCase;
+:Test-case10 a verif:TestCase, owl:NamedIndividual;
 	td:specificationReference <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-map.html#wot-mappings11>;
 	dc:description "An object property mapping can have many target classes to be the type of the generated instances";
 	verif:desiredBehaviour "<ObjectPropertyMapping> <targetClass> <http://www.w3.org/2002/07/owl#Class>" .
