@@ -8,4 +8,4 @@
 :test-case-1 a verif:TestCaseDesign, owl:NamedIndividual;
 	verif:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-wot.html#wot1>;
 	dc:description "What is a thing in the web thing context?";
-	verif:desiredBehaviour "<Thing> SubClassOf <http://www.w3.org/2002/07/owl#Thing>".
+	verif:desiredBehaviour "<Coach> SubClassOf <http://xmlns.com/foaf/0.1/Person>".
