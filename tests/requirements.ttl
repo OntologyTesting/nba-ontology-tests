@@ -1,11 +1,15 @@
 @prefix dc:    <http://purl.org/dc/terms/> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
 @prefix verif: <http://w3id.org/def/verification-tests#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
 @prefix  :     <> .
 
 
 
-:test-case-1 a verif:TestCaseDesign, owl:NamedIndividual;
-	verif:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-wot.html#wot1>;
-	dc:description "What is a thing in the web thing context?";
-	verif:desiredBehaviour "<Coach> SubClassOf <http://xmlns.com/foaf/0.1/Person>".
+
+
+:Test-case1 a verif:TestCaseDesign, owl:NamedIndividual;
+	verif:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform1>;
+	dc:description "What is an organization?" ;
+	verif:desiredBehaviour "<http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#Player> subClassOf <http://xmlns.com/foaf/0.1/Person>" .
+
