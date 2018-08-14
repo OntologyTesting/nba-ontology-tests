@@ -10,6 +10,7 @@
 
 :Test-case1 a verif:TestCaseDesign, owl:NamedIndividual;
 	verif:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform1>;
+	verif:isRelatedToRequirement <http://vicinity.iot.linkeddata.es/vicinity/requirements/report-core.html#platform2>;
 	dc:description "What is an organization?" ;
 	verif:desiredBehaviour "<B> subClassOf <A>" .
 

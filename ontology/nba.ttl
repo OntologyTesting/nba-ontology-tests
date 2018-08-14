@@ -12,9 +12,11 @@
 #    Object Properties
 #################################################################
 
+
 ###  http://www.semanticweb.org/albai/ontologies/2018/4/untitled-ontology-9#P
 :P rdf:type owl:ObjectProperty ;
    owl:inverseOf :R .
+
 
 
 ###  http://www.semanticweb.org/albai/ontologies/2018/4/untitled-ontology-9#R
