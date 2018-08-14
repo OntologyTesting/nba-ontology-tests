@@ -339,13 +339,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 
-###  http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements#leads
-
-:leads rdf:type owl:ObjectProperty ;
-       
-       rdfs:domain :Coach ;
-       
-       rdfs:range :Team .
 
 
 
